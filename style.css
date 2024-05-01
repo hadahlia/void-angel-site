@@ -23,7 +23,7 @@ TODO:
 
 body {
 	/* height:120vh; */
-	background: url("galaxy_bg.jpg") repeat;
+	background: url("galaxy.webp") repeat;
 	background-size: contain;
 	background-color: rgba(0, 56, 46, 0.242);
 	/*color:aqua;*/
@@ -99,10 +99,11 @@ main p {
 
 header {
 	background: linear-gradient(rgb(0, 0, 202), rgb(0, 2, 44), rgb(0, 0, 62));
-	position: absolute;
+	/* position: absolute;
 	top: 0;
 	left: 0;
-	right: 0;
+	right: 0; */
+	width:100%;
 	height: 65px;
 	display: block;
 	align-items: center;
@@ -112,6 +113,19 @@ header {
 header * {
 	display: inline;
 }
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 65px;
+	width: 100%;
+	margin: 0;
+}
+
+/* ul {
+	display: inline-block;
+} */
 
 button {
 	background: linear-gradient(90deg, #0fffab, #00b3ff, #00ff3c);
@@ -124,7 +138,6 @@ button {
 	border: none;
 	/*border-right: 6px solid rgba(56, 116, 255, 0.188);*/
 	padding: 6px;
-	padding-right: 0px;
 	text-align: center;
 	align-items: center;
 	text-decoration: none;
@@ -132,15 +145,19 @@ button {
 	display:inline;
 	font-family: "Nanum Gothic Coding", monospace;
 	font-size:24px;
-	margin-top: 14px;
-	margin-left: 8px;
-	margin-right: 8px;
-	margin-bottom: 0px;
+	margin-top:4px;
+
+	margin-left: 1rex;
+	margin-right: 1rex;
+	margin-bottom: 0;
 }
 
+
+
 a.button-link {
-	display:inline;
-	padding: 12px 32px;
+	display:flex;
+	/* padding: 12px 32px; */
+	padding:11px 10px;
     text-decoration: none;
 }
 
@@ -176,13 +193,13 @@ header li a {
 	position: fixed;
 	/* top: 65px; */
 	/* bottom:0; */
-	left: 15%;
-	right: 15%;
+	left: 10%;
+	right: 10%;
 	height:100vh;
 	/* width:75% center; */
 	
 	background: url("tomb_scrollw.webp") repeat-x;
-	filter: brightness(0.5);
+	filter: brightness(0.6) grayscale(20%);
 	
 	background-size: contain;
 	background-position: center;
@@ -193,8 +210,8 @@ header li a {
 	flex-grow: 1;
 	top: 65px;
 	/* bottom:0; */
-	left: 15%;
-	right: 15%;
+	left: 10%;
+	right: 10%;
 	height:100%;
 	width:75% center;
 
@@ -203,8 +220,8 @@ header li a {
 	border-top: none;
 	border-bottom: none;
 	padding: 8px;
-	margin-right: 15%;
-	margin-left: 15%;
+	margin-right: 10%;
+	margin-left: 10%;
 	box-shadow: 0px 0px 18px 8px rgb(66, 255, 192);
 	z-index: 2;
 }
@@ -223,7 +240,7 @@ header li a {
 	/* bottom:0;
 	left:0; */
 	padding: 1rem;
-    width:100%;
+    /* width:100%; */
     height:70px;
     background-color: #0c0348;
 	text-align: center;
