@@ -123,7 +123,11 @@ nav {
 	margin: auto;
 }
 
-ul {
+/* body nav {
+	justify-content: space-between;
+} */
+
+.header-list {
 	display: flex;
 }
 
