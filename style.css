@@ -21,6 +21,10 @@ TODO:
 	font-style: normal;
 }
 
+* {
+	cursor: url('cursor.png'), auto;
+}
+
 body {
 	/* height:120vh; */
 	background: url("galaxy.webp") repeat;
@@ -30,6 +34,7 @@ body {
 	font-family: "Nanum Gothic Coding", monospace;
 	font-size:20px;
 	text-shadow: 2px 2px 3px rgb(0, 28, 32);
+	/* cursor: url('cursor.png'), auto; */
 	/* margin-top: 76px;
 	margin-left: 40px;
 	margin-right: 20px;
@@ -65,24 +70,24 @@ main {
 }
 
 main h1 {
-	padding-top: 20px;
-	padding-bottom: 25px;
+	padding-top: 18px;
+	padding-bottom: 18px;
 	font-size: 2.5em;
     line-height: calc(1ex / 0.42);
     margin: calc(1ex / 0.42) 0;
 }
 
 main h2 {
-	padding-top: 20px;
-	padding-bottom: 25px;
+	padding-top: 18px;
+	padding-bottom: 18px;
 	font-size: 2em;
     line-height: calc(1ex / 0.42);
     margin: calc(1ex / 0.42) 0;
 }
 
 main h3 {
-	padding-top: 20px;
-	padding-bottom: 25px;
+	padding-top: 18px;
+	padding-bottom: 18px;
 	font-size: 1.75em;
     line-height: calc(1ex / 0.38);
     margin: calc(1ex / 0.38) 0;
@@ -111,6 +116,7 @@ header {
 }
 
 header * {
+	
 	display: inline;
 }
 
@@ -130,8 +136,9 @@ nav {
 .header-list {
 	display: flex;
 }
-
+/* pointer-events: none; */
 button {
+
 	background: linear-gradient(90deg, #0fffab, #00b3ff, #00ff3c);
 	background-size: cover;
 	background-clip: border-box;
@@ -269,4 +276,12 @@ header li a {
     background-color: #0c0348;
 	text-align: center;
 	z-index: 3;
+}
+
+.custom-cursor {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
 }
